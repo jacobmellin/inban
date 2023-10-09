@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen items-center justify-center">
       <h1 className="text-indigo-400 font-thin text-5xl tracking-wide mb-3">INBAN</h1>
+      <h2 className="text-indigo-300 text-s">Keeping your wallet thicc(er)</h2>
 
       <main className="bg-indigo-800 border-indigo-700 border-solid border-2 mt-10 rounded-lg p-5 w-[400px]">
         <ul className="text-indigo-200">
