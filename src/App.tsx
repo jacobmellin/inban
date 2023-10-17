@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
+
+import BookBtn from "./assets/components/book-btn";
 
 function App() {
   const [books, setBooks] = useState<Array<Record<string, any>>>([]);
@@ -23,7 +24,7 @@ function App() {
         <ul className="text-indigo-200">
             { 
                 books.map(book => (
-                    <li key="{book.id}">{ book.name }</li>
+                    <BookBtn id={book.id} name={book.name} />
                 ))
             }
         </ul>
